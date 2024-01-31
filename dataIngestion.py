@@ -12,8 +12,9 @@ def processPDFData():
                              loader_cls=PyPDFLoader) ## try single mode 
     documents = loader.load()
     
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500,
-                                                   chunk_overlap=50) # add custom separator \n \n\n . Also Tokeniser
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=750,
+                                                   chunk_overlap=100) # add custom separator \n \n\n . Also Tokeniser
+
     texts = text_splitter.split_documents(documents)
     return texts
 
