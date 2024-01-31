@@ -1,8 +1,8 @@
+import constants
 from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-import constants
+from langchain.text_splitter import RecursiveCharacterTextSplitter 
 import time
 
 
@@ -13,7 +13,7 @@ def processPDFData():
     documents = loader.load()
     
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500,
-                                                   chunk_overlap=50) # add custom separator \n \n\n .
+                                                   chunk_overlap=50) # add custom separator \n \n\n . Also Tokeniser
     texts = text_splitter.split_documents(documents)
     return texts
 
@@ -34,11 +34,3 @@ if __name__ == "__main__":
     persistTexts(texts)
     t_persist = time.perf_counter()  #Timer ends
     print(f"Total time taken: {t_persist - t_process:0.2f} seconds")
-    
-
-
-
-    
-
-
-
