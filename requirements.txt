@@ -1,0 +1,8 @@
+pypdf
+langchain
+langchain_community
+ctransformers
+ctransformers[cuda]
+faiss_cpu
+faiss_gpu
+chainlit
