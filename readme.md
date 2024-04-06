@@ -45,3 +45,11 @@ I, like almost everyone else was following the developments in this field. But, 
 - Further improving RAG - to improve accuracy
 - Exception handling
 - Sources as objects - separating code of processing sources information to separate module.
+
+## Sample Responses:
+- ![What are the qualities of exceptional software engineers?](images/qualities%20of%20exceptional%20software%20developer.png)
+- ![How to reduce bugs in the code](images/reducing%20bugs.png)
+- ![Explain Factory design pattern to a begineer software engineer.](images/factory.png)
+
+### Not so good responses:
+- ![How to become a good software developer.](images/E-software%20developer.png)
